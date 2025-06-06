@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Chrome Extension</title>
-
+    <title>Curitics URL History</title>
   </head>
   <body>
+    <button id="googleLogin">Login with Google</button>
+    <p style="color: green;" id="welcomeTxt"></p>
+    <button id="logoutButton" style="display: none;">Logout</button>
 
-     <button id="googleLogin">Login with Google</button>
+    <h3>Visited History</h3>
+    <ul id="historyList"></ul>
 
-      <p style="color: green;" id="welcomeTxt"></p>
-    <button id="logoutButton">Logout</button>
 
+    <button id="clearHistoryButton">Clear History</button>
     <script src="script.js"></script>
   </body>
 </html>

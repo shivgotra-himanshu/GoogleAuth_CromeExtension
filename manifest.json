@@ -1,14 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Google Login Extension",
+  "name": "Curitics URL History",
   "version": "1.0.0",
-  "description": "Login with Google OAuth",
-  "permissions": ["identity", "storage"],
+  "description": "Store website visited History with date and time",
+  "permissions": ["identity", "storage","tabs", "webNavigation"],
   "oauth2": {
     "client_id": "970370380874-kt1825if936escjjjk9ao1b6u4blucgb.apps.googleusercontent.com",
     "scopes": ["email", "profile"]
   },
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon":{
+      "16":"./assets/favicon.png"
+    }
+  },
+  "icons": {
+    "128": "./assets/favicon.png"
   }
 }
